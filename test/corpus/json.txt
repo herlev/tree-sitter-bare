@@ -1,0 +1,74 @@
+==================
+JSON Schema
+==================
+type ElementId uint
+
+type False void
+type True void
+type Null void
+
+type Object map<str><ElementId>
+type Array list<ElementId>
+
+type Element union {
+  | False
+  | True
+  | Null
+  | f64
+  | str
+  | Object
+  | Array
+}
+
+type JSONDocument list<Element>
+---
+(source_file
+  (type_def
+    (type_ident)
+    (type))
+  (type_def
+    (type_ident)
+    (type))
+  (type_def
+    (type_ident)
+    (type))
+  (type_def
+    (type_ident)
+    (type))
+  (type_def
+    (type_ident)
+    (type
+      (type_param
+        (type))
+      (type_param
+        (type
+          (type_ident)))))
+  (type_def
+    (type_ident)
+    (type
+      (type_param
+        (type
+          (type_ident)))))
+  (type_def
+    (type_ident)
+    (type
+      (union
+        (type
+          (type_ident))
+        (type
+          (type_ident))
+        (type
+          (type_ident))
+        (type)
+        (type)
+        (type
+          (type_ident))
+        (type
+          (type_ident)))))
+  (type_def
+    (type_ident)
+    (type
+      (type_param
+        (type
+          (type_ident))))))
+

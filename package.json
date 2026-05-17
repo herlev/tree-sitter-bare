@@ -1,0 +1,20 @@
+{
+  "name": "tree-sitter-bare",
+  "version": "0.1.0",
+  "description": "BARE (Binary Application Record Encoding) grammar for tree-sitter",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/herlev/tree-sitter-bare.git"
+  },
+  "funding": "",
+  "license": "MIT",
+  "author": {
+    "name": "herlev",
+    "url": ""
+  },
+  "keywords": ["incremental", "parsing", "tree-sitter", "bare"],
+  "devDependencies": {
+    "tree-sitter-cli": "^0.26.8"
+  }
+}

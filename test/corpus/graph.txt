@@ -1,0 +1,60 @@
+==================
+Graph
+==================
+type NodeId uint
+
+type Node struct {
+  what: str
+}
+
+type Connection struct {
+  from: NodeId
+  to: NodeId
+  why: str
+}
+
+type Graph struct {
+  nodes: map<NodeId><Node>
+  edges: list<Connection>
+}
+---
+(source_file
+  (type_def
+    (type_ident)
+    (type))
+  (type_def
+    (type_ident)
+    (type
+      (struct
+        (struct_field_name)
+        (type))))
+  (type_def
+    (type_ident)
+    (type
+      (struct
+        (struct_field_name)
+        (type
+          (type_ident))
+        (struct_field_name)
+        (type
+          (type_ident))
+        (struct_field_name)
+        (type))))
+  (type_def
+    (type_ident)
+    (type
+      (struct
+        (struct_field_name)
+        (type
+          (type_param
+            (type
+              (type_ident)))
+          (type_param
+            (type
+              (type_ident))))
+        (struct_field_name)
+        (type
+          (type_param
+            (type
+              (type_ident))))))))
+
